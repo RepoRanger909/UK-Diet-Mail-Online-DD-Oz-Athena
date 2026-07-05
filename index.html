@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" data-xadprotection="true">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,nofollow,noarchive">
+    <link rel="stylesheet" id="google_font_Open_Sans-css" href="./index_files/sss.css" type="text/css" media="all">
+    <link href="./index_files/bootstrap.css" rel="stylesheet">
+    <link href="./index_files/bootstrap-theme.css" rel="stylesheet">
+    <script src="./index_files/jquery.min.js.download"></script>
+    <link type="text/css" rel="stylesheet" id="dark-mode-custom-link">
+    <link type="text/css" rel="stylesheet" id="dark-mode-general-link">
+    <style lang="en" type="text/css" id="dark-mode-custom-style"></style>
+    <style lang="en" type="text/css" id="dark-mode-native-style"></style>
+    <style lang="en" type="text/css" id="dark-mode-native-sheet"></style>
+    <link rel="stylesheet" href="./index_files/style.css" type="text/css">
+    <title></title>
+    <style>
+      #A1 {
+        font-size: 18px;
+        text-align: center;
+      }
+
+      #Navcolour1 {
+        color: #FFF;
+      }
+    </style>
+    <style>
+      .dtpcnt {
+        opacity: 0;
+      }
+    </style>
+    <style>
+      .youtube-player {
+        position: relative;
+        padding-bottom: 56.23%;
+        /* Use 75% for 4:3 videos */
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        background: #000;
+        margin: 5px;
+      }
+
+      .youtube-player iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+        background: transparent;
+      }
+
+      .youtube-player img {
+        bottom: 0;
+        display: block;
+        left: 0;
+        margin: auto;
+        max-width: 100%;
+        width: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border: none;
+        height: auto;
+        cursor: pointer;
+        -webkit-transition: .4s all;
+        -moz-transition: .4s all;
+        transition: .4s all;
+      }
+
+      .youtube-player img:hover {
+        -webkit-filter: brightness(75%);
+      }
+
+      .youtube-player .play {
+        height: 72px;
+        width: 72px;
+        left: 50%;
+        top: 50%;
+        margin-left: -36px;
+        margin-top: -36px;
+        position: absolute;
+        background: url("index_files/TxzC70f.png") no-repeat;
+        cursor: pointer;
+      }
+
+      .media-heading {
+        margin-top: 0;
+        margin-bottom: 0px !important;
+      }
+
+      .show-tab,
+      .show-mob {
+        display: none !important;
+      }
+
+      @media (max-width: 768px) {
+        .show-tab {
+          display: inline !important;
+        }
+
+        .show-desk,
+        .show-mob {
+          display: none !important;
+        }
+
+        .content h1 {
+          margin-top: 5px !important;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .show-mob {
+          display: inline !important;
+        }
+
+        .show-desk,
+        .show-tab {
+          display: none !important;
+        }
+
+        .content h1 {
+          margin-top: 5px !important;
+        }
+      }
+
+      .navbar {
+        position: static !important;
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="chrome-extension://immhpnclomdloikkpcefncmfgjbkojmh/css/emoji.css">
+    <style type="text/css">
+      // v4 font rules
+      // cyrillic-ext
+      @font-face {
+        font-family: 'Atlassian Sans Ext';
+        font-style: normal;
+        font-weight: 100 900;
+        font-display: swap;
+        src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/AtlassianSans-cyrillic-ext.woff2') format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+      }
+
+      // cyrillic
+      @font-face {
+        font-family: 'Atlassian Sans Ext';
+        font-style: normal;
+        font-weight: 100 900;
+        font-display: swap;
+        src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/AtlassianSans-cyrillic.woff2') format('woff2');
+        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+
+      // vietnamese
+      @font-face {
+        font-family: 'Atlassian Sans Ext';
+        font-style: normal;
+        font-weight: 100 900;
+        font-display: swap;
+        src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/AtlassianSans-vietnamese.woff2') format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0,
+          U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+      }
+
+      // latin
+      @font-face {
+        font-family: 'Atlassian Sans Ext';
+        font-style: normal;
+        font-weight: 100 900;
+        font-display: swap;
+        src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/AtlassianSans-latin.woff2') format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304,
+          U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      // latin-ext
+      @font-face {
+        font-family: 'Atlassian Sans Ext';
+        font-style: normal;
+        font-weight: 100 900;
+        font-display: swap;
+        src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/AtlassianSans-latin-ext.woff2') format('woff2');
+        unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308,
+          U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113,
+          U+2C60-2C7F, U+A720-A7FF;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container" align="center">
+        <a href="{offer_link}">
+          <img src="./index_files/header.png" class="img-responsive show-desk" alt="">
+        </a>
+        <a href="{offer_link}">
+          <img src="./index_files/header_768.png" class="img-responsive show-tab" alt="">
+        </a>
+        <a href="{offer_link}">
+          <img src="./index_files/header_480.png" class="img-responsive show-mob" alt="">
+        </a>
+      </div>
+    </nav>
+    <section class="content-box">
+      <div class="container content">
+        <div class="row">
+          <div class="col-md-8">
+            <h1 style="margin-bottom:5px">Miracle Weight Loss Capsule That Naturally Burns Fat Nets Biggest Deal In Dragons' Den History!</h1>
+            <h3 style="margin-top:0px;font-size:20px;font-family:&#39;Open Sans&#39;,sans-serif">Find Out Why Every Judge On Dragons' Den Backed This Amazing Supplement</h3>
+            <div style="margin-bottom:15px;font-style:italic;">Published: <span class="date">Sunday, June 1, 2025</span> By Christine Taylor </div>
+            <a href="{offer_link}">
+              <img src="./index_files/ba.jpg" class="img-responsive" alt="">
+            </a>
+            <p style="text-align:center;margin-top:5px;">
+              <strong>
+                <i>It was the most watched episode in Dragons' Den history when Isabelle Thorpe won over the Dragons' Den panel with her natural weight loss formula.</i>
+              </strong>
+            </p>
+            <p class="m-t-25">
+              <strong>(Daily Mail)</strong> - Never before had the judging panel on Dragons' Den unanimously decided to each invest over a million pounds into a potential company.
+            </p>
+            <p class="m-t-25">After buying a staggering 25% share in Isabelle's company, the Dragons' Den panel have personally mentored the 39 year old mum, helping her undergo re-branding and re-packing of her miracle weight loss product.</p>
+            <p class="m-t-25">Touting her discovery as "the greatest step forward in weight-loss history," the judges were quick to offer up their hard earned cash to back the entrepreneur.</p>
+            <p class="m-t-25">
+              <i>"I am shocked. The most I was hoping for was some advice... I weren’t even sure that I would manage to get any investors,"</i> explained Isabelle. <i>"After outstanding offers from each panel member, I burst into tears."</i>
+            </p>
+            <p class="m-t-25">The judges were amazed that one product was able to do all of the following:</p>
+            <p class="m-t-25">
+              <strong>- Burn Off Excess Stored Fat <br>- Suppress Your Appetite <br>- Retain Muscle Mass and Boost Energy <br>- Defeat Emotional Eating <br>- Improves Sleep <br>- Made From 100% Raspberry Ketones </strong>
+            </p>
+            <p class="m-t-25">
+              <i>"It didn't feel real. The fact that all these successful, business-minded people wanted to be a part of <a href="{offer_link}" target="_blank">
+                  <strong></strong>Oz+ </a> and what I was doing was very emotional!" </i> explained Isabelle.
+            </p>
+            <p class="m-t-25">Isabelle is the first contestant in the show’s long duration to ever receive a standing ovation and investment offers from all five panel members. Isabelle said they celebrated the success with champagne and cake when the episode wrapped.</p>
+            <a href="{offer_link}">
+              <img src="./index_files/Deborah-Meaden-e1583514745351.jpg" class="img-responsive" alt="">
+            </a>
+            <p style="text-align:center;margin-top:5px;">
+              <i>Isabelle is first contestants in Dragons' Den history to receive investment offers all five panel members.</i>
+            </p>
+            <p class="m-t-25">Since filming their episode, Isabelle has been hard at work putting the advice of her mentors into play.</p>
+            <p class="m-t-25">
+              <i>"We completely re-branded our company and came up with new packaging,"</i> said Isabelle.
+            </p>
+            <p class="m-t-25">She recently unveiled the product that netted her millions of pounds in investments and made it for sale across the United Kingdom.</p>
+            <p class="m-t-25">
+              <i>"The product we demostrated on the show have been rebranded into <a href="{offer_link}" target="_blank">
+                  <strong></strong>Oz+ </a>. It’s the original formula, all we’ve done is change the name and the packaging," </i> explained Isabelle.
+            </p>
+            <p class="m-t-25">Isabelle first launched the weight loss supplement for sale through their company website and say they sold out within 2 hours.</p>
+            <p class="m-t-25">
+              <i>"We even made sure we had more product than we thought we could sell, but all of it sold out within 2 hours!"</i> exclaimed Isabelle.
+            </p>
+            <p class="m-t-25">While the Dragons' Den investors are toasting to their smart business move, women all around UK are flocking online to purchase <a href="{offer_link}" target="_blank">Oz+</a> and say the results have been life-changing. </p>
+            <p class="m-t-25">Clinical trials of <a href="{offer_link}" target="_blank">Oz+</a> have uncovered that women who used <a href="{offer_link}" target="_blank">Oz+</a> were able to lose an average of 1.5 stones in 1 month without any changes to their diet or require any intense workout. </p>
+            <p style="margin-bottom:0px;">
+              <a href="{offer_link}">
+                <img src="./index_files/deborah.jpg" class="img-responsive" alt="">
+              </a>
+            </p>
+            <p style="text-align:center;margin-top:5px;">
+              <i>" <a href="{offer_link}" target="_blank">Oz+</a> is revolutionizing weight loss supplements" explained Deborah Meaden from Dragons' Den. </i>
+            </p>
+            <p class="m-t-25"></p>
+            <h3>Celebrities Loves Oz+</h3>
+            <p></p>
+            <p style="margin-bottom:0px;">
+              <a href="{offer_link}">
+                <img src="./index_files/kloe.jpg" class="img-responsive" alt="">
+              </a>
+            </p>
+            <p style="text-align:center;margin-top:5px;">
+              <i>" <a href="{offer_link}" target="_blank">Oz+</a> is ground-breaking. They are the only company in the world who are effectively helping women lose weight in a safe, natural and healthy manner." </i> - <strong>Holly Willoughby, 43</strong>
+            </p>
+            <hr>
+            <p style="margin-bottom:0px;">
+              <a href="{offer_link}">
+                <img src="./index_files/charlotte.jpg" class="img-responsive" alt="">
+              </a>
+            </p>
+            <p style="text-align:center;margin-top:5px;">
+              <i>"I’ve been using <a href="{offer_link}" target="_blank">Oz+</a> as my weight loss supplement for months and I’m amazed at how I've been able to keep the weight off and not be hungry! I haven't felt this healthy for a very long time!" </i> - <strong>Charlotte Crosby, 27</strong>
+            </p>
+            <hr>
+            <p style="margin-bottom:0px;">
+              <a href="{offer_link}">
+                <img src="./index_files/lauren.jpg" class="img-responsive" alt="">
+              </a>
+            </p>
+            <p style="text-align:center;margin-top:5px;">
+              <i>"I have a hectic schedule and I don’t have a lot of time to devote to workout routines. That’s why I love <a href="{offer_link}" target="_blank">Oz+</a>! Taking just one per day helps me stay toned and feeling healthy and energetic." </i> - <strong>Lauren Goodger, 31</strong>
+            </p>
+            <hr>
+            <p style="margin-bottom:0px;">
+              <a href="{offer_link}">
+                <img src="./index_files/dawn.jpg" class="img-responsive" alt="">
+              </a>
+            </p>
+            <p style="text-align:center;margin-top:5px;">
+              <i>"All I can say is that it works! I dropped a total of 6 stones in the course of 4 months! Beret the catch, with no exercise! I wanted to see if it would do as they claimed it would if I did no exercise and to my surprise it did" </i> - <strong>Dawn French, 59</strong>
+            </p>
+            <hr>
+            <p class="m-t-25"></p>
+            <h3>Give Yourself The Star Treatment</h3>
+            <p></p>
+            <p class="m-t-25">For a limited time you can <a href="{offer_link}" target="_blank">try Oz+ for 50% discount</a>! </p>
+            <p class="m-t-25">This miracle weight loss capsule will be delivered straight to your door and ready to be used immediately.</p>
+            <p class="m-t-25">Remember it’s important that you use <a href="{offer_link}" target="_blank">Oz+</a> daily to achieve the full fat-burning results. </p>
+            <p class="m-t-25" style="font-weight:bold;text-decoration:underline">This offer is for a limited time only so follow the link below and secure your discount trial today.</p>
+          </div>
+          <div class="col-md-4">
+            <h5 class="m-b-0 pink-border-bottom">READER RESULTS</h5>
+            <a href="{offer_link}">
+              <img src="./index_files/aba1.jpg" class="img-responsive" alt="">
+            </a>
+            <p>Lola Gill, age 53 submitted this photo of her results with <a href="{offer_link}" target="_blank">Oz+</a>. You look great, Lola! </p>
+            <p class="m-b-5">" <a href="{offer_link}" target="_blank">Oz+</a> is the absolute best weight loss product I've ever used. I thought my days of looking young and thin were long gone. I can't thank you enough for this!" </p>
+            <p class="m-b-5" style="margin-bottom:10px">
+              <strong>
+                <i>Lola Gill - London</i>
+              </strong>
+            </p>
+            <hr>
+            <a href="{offer_link}">
+              <img src="./index_files/aba2.jpg" class="img-responsive" alt="">
+            </a>
+            <p class="m-b-5">
+              <i>"For the first time in forever I am finally happy when I look in the mirror every morning. I haven't felt this confident in a long time!"</i>
+            </p>
+            <p class="m-b-5" style="margin-bottom:10px">
+              <strong>
+                <i>Christine Harvey - Cambridge</i>
+              </strong>
+            </p>
+            <hr>
+            <a href="{offer_link}">
+              <img src="./index_files/aba3.jpg" class="img-responsive" height="151" alt="">
+            </a>
+            <p class="m-b-5">
+              <i>"I've been trying to lose the same 1 stone for what feels like forever now. <a href="{offer_link}" target="_blank">Oz+</a> got rid of it in only 2 weeks! Thanks so much!" </i>
+            </p>
+            <p class="m-b-5" style="margin-bottom:10px">
+              <strong>
+                <i>Mary Kelly - Liverpool</i>
+              </strong>
+            </p>
+            <hr>
+            <a href="{offer_link}">
+              <img src="./index_files/aba4.jpg" class="img-responsive" height="151" alt="">
+            </a>
+            <p class="m-b-5">
+              <i>"As a mum of 2, I juggle work, kids, and all of life's other stresses on a daily basis. A friend of mine bought me <a href="{offer_link}" target="_blank">Oz+</a> and I am incredibly impressed with the results! I couldn't believe when I started dropping the weight that same week!" </i>
+            </p>
+            <p class="m-b-5" style="margin-bottom:10px">
+              <strong>
+                <i>Claire McVey - Leeds</i>
+              </strong>
+            </p>
+            <hr>
+            <a href="{offer_link}">
+              <img src="./index_files/weight7.jpg" class="img-responsive" height="151" alt="">
+            </a>
+            <p class="m-b-5">
+              <i>"Thank God I didn't go through with that surgery... I got the same weight loss results, for less than a cup of coffee! I'm so happy!!!"</i>
+            </p>
+            <p class="m-b-5" style="margin-bottom:10px">
+              <strong>
+                <i>Victoria Novotney - Cambridge</i>
+              </strong>
+            </p>
+            <hr>
+            <div class="row revival-box2" align="center">
+              <div>
+                <p class="m-b-5">
+                  <a href="{offer_link}" target="_blank">
+                    <strong>CLICK HERE to claim your discount offer of Oz+</strong>
+                  </a>
+                </p>
+                <div style="text-align: center;">
+                  <a href="{offer_link}" target="_blank">
+                    <img src="./index_files/db21437a9aa9658893353f1f6c3e72cb.png" style="width:50%" alt="">
+                  </a>
+                </div>
+              </div>
+              <div> discount offer are limited. <br> Expires on <span class="date">Sunday, June 1, 2025</span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <a href="{offer_link}">
+                <img src="./index_files/offer.jpg" class="img-responsive" alt="">
+              </a>
+              <p class="text-center pink-text m-b-5">
+                <strong>(After <span class="date">Sunday, June 1, 2025</span> Sat <span style="display: none; font-size: 1px;">A delicious meal watched the playful in the park. A delicious meal ate and watched with the quick in the mountains.</span> the disc <span style="display:none">7F <span style="display: none; font-size: 1px;">The cat read the quick under the tree. A beautiful sunset jumped and watched with the lazy around the city.</span>zUEu </span>o <span style="display: none; font-size: 1px;">A delicious meal watched the lazy on the grass. The cat jumped and jumped with the playful in the mountains.</span>unt offe <span style="display:none">)cw <span style="display: none; font-size: 1px;">A beautiful sunset jumped the quick on the grass. A beautiful sunset read and ate with the playful at the beach.</span>KgR </span>r promotion will no longer b <span style="display: none; font-size: 1px;">My friend jumped the quick around the city. A beautiful sunset ate and ran with the quick under the tree.</span>e availab <span style="display:none">G( <span style="display: none; font-size: 1px;">The weather ate the bright on the grass. A delicious meal watched and watched with the playful in the mountains.</span>vAC( </span>le <span style="display: none; font-size: 1px;">An interesting book ran the smart in the park. A delicious meal slept and slept with the smart under the tree.</span>**) </strong>
+              </p>
+              <p class="m-b-5"></p>
+              <p class="text-center">
+                <strong style="color:#e9328c;">IMPORTANT: <span style="display: none; font-size: 1px;">A dog ate the quick around the city. My friend enjoyed and ran with the quick over the fence.</span>During clinica <span style="display:none">oN <span style="display: none; font-size: 1px;">The cat jumped the happy under the tree. The cat ran and read with the bright at the beach.</span>#EHy </span>l t <span style="display: none; font-size: 1px;">A beautiful sunset enjoyed the playful at the beach. The cat ran and read with the happy under the tree.</span>estin <span style="display:none">P <span style="display: none; font-size: 1px;">An interesting book read the playful on the grass. The weather read and read with the quick around the city.</span>XU$%@ </span>g it was proven that you must use Oz+ every mor <span style="display: none; font-size: 1px;">A delicious meal enjoyed the smart under the tree. An interesting book ran and read with the smart over the fence.</span>ning to achieve s <span style="display:none">Pp <span style="display: none; font-size: 1px;">A delicious meal ran the hungry around the city. A beautiful sunset read and jumped with the hungry over the fence.</span>Npks </span>imil <span style="display: none; font-size: 1px;">The weather watched the playful under the tree. An interesting book ran and jumped with the lazy around the city.</span>ar results. </strong>
+              </p>
+              <p class="update m-b-30">
+                <a href="{offer_link}">
+                  <img src="./index_files/checkmark-green-sm.png" alt="">
+                </a>
+                <strong>Up <span style="display: none; font-size: 1px;">A delicious meal jumped the happy over the fence. The weather watched and slept with the hungry under the tree.</span>date: </strong>
+                <a href="{offer_link}" target="_blank">CLICK <span style="display: none; font-size: 1px;">A dog ran the happy on the grass. The cat jumped and ate with the playful on the grass.</span>HERE to Cla <span style="display:none">VE!o <span style="display: none; font-size: 1px;">A beautiful sunset enjoyed the quick over the fence. The cat ate and ran with the playful on the grass.</span>rD </span>im Your <span style="display: none; font-size: 1px;">A beautiful sunset slept the hungry at the beach. An interesting book ran and ran with the smart over the fence.</span>50% Discou <span style="display:none">7m <span style="display: none; font-size: 1px;">The cat ran the happy under the tree. The weather slept and slept with the lazy at the beach.</span>Sz%9 </span>nt + FREE Shipping Of <span style="display: none; font-size: 1px;">A beautiful sunset slept the quick over the fence. A delicious meal enjoyed and enjoyed with the playful at the beach.</span>Oz+ </a>
+                <span style="display: none; font-size: 1px;">A beautiful sunset ran the playful at the beach. An interesting book read and slept with the hungry under the tree.</span>D <span style="display:none">!* <span style="display: none; font-size: 1px;">A delicious meal slept the smart in the park. A delicious meal read and read with the playful around the city.</span>Pc!i </span>iscount <span style="display: none; font-size: 1px;">A dog jumped the smart under the tree. The cat ran and watched with the quick around the city.</span> Promotion Ends: <span class="date">Sunday, June 1, 2025</span>
+              </p>
+              <div class="row revival-box">
+                <div class="col-sm-4">
+                  <a href="{offer_link}" target="_blank">
+                    <img src="./index_files/db21437a9aa9658893353f1f6c3e72cb.png" class="img-responsive rev" alt="">
+                  </a>
+                </div>
+                <div class="col-sm-8 revival-text">
+                  <p>
+                    <a href="{offer_link}" target="_blank">
+                      <strong>Step 1 <span style="display: none; font-size: 1px;">A delicious meal ran the playful over the fence. An interesting book ate and watched with the playful in the mountains.</span>: 50% Dis <span style="display:none">q <span style="display: none; font-size: 1px;">An interesting book watched the lazy on the grass. A dog jumped and ate with the playful in the mountains.</span>z6*zw </span>count + FREE Shipp <span style="display: none; font-size: 1px;">An interesting book enjoyed the smart in the mountains. My friend jumped and read with the hungry under the tree.</span>ing Of Oz+ </strong>
+                    </a>
+                  </p>
+                  <a href="{offer_link}" target="_blank">
+                    <img src="./index_files/button2.png" class="img-responsive button" alt="">
+                  </a>
+                  <p style="font-size:14px;"> T<span style="display: none; font-size: 1px;">A dog read the lazy in the mountains. The cat ate and ran with the smart around the city.</span>his spe<span style="display:none">FBO <span style="display: none; font-size: 1px;">An interesting book read the playful under the tree. A delicious meal read and jumped with the bright over the fence.</span>Zs9 </span>ci<span style="display: none; font-size: 1px;">The weather watched the smart over the fence. A dog read and enjoyed with the happy at the beach.</span>al of<span style="display:none">uj&amp;PA <span style="display: none; font-size: 1px;">My friend slept the playful around the city. A beautiful sunset slept and read with the happy on the grass.</span>w </span>fer <span style="display: none; font-size: 1px;">A dog enjoyed the quick on the grass. The weather jumped and enjoyed with the hungry over the fence.</span>ends: <strong>
+                      <span class="date">Sunday, June 1, 2025</span>
+                    </strong>
+                  </p>
+                </div>
+              </div>
+            </div>--&gt; <span style="display: none; font-size: 1px;">The cat watched the quick over the fence. A delicious meal watched and slept with the playful around the city.</span>
+          </div>
+        </div>
+        <hr>
+        <div class="container comments">
+          <div class="row border-top">
+            <div class="col-md-8">
+              <div class="row recent">
+                <div class="col-xs-12">
+                  <a href="{offer_link}" target="_blank" class="pull-left">Latest 25 C <span style="display: none; font-size: 1px;">A beautiful sunset enjoyed the playful at the beach. A dog ate and ate with the quick on the grass.</span>omments </a>
+                  <p class="pull-right">Comments are curre <span style="display: none; font-size: 1px;">The cat watched the happy on the grass. The cat jumped and slept with the happy around the city.</span>ntly cl <span style="display:none">n <span style="display: none; font-size: 1px;">A dog jumped the happy on the grass. A dog jumped and jumped with the smart on the grass.</span>Qp)0Q </span>os <span style="display: none; font-size: 1px;">A delicious meal slept the smart at the beach. The cat jumped and watched with the lazy around the city.</span>ed </p>
+                </div>
+              </div>
+              <div class="media no-border-top">
+                <div class="media-left">
+                  <a href="{offer_link}" target="_blank">
+                    <img class="media-object" src="./index_files/lewis.jpg" alt="">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">
+                    <a href="{offer_link}" target="_blank">Sylvie E <span style="display: none; font-size: 1px;">The weather jumped the smart under the tree. A beautiful sunset slept and jumped with the playful on the grass.</span>arl </a>
+                  </h4>
+                  <p>I have been using this <span style="display: none; font-size: 1px;">The weather enjoyed the happy in the park. An interesting book watched and watched with the lazy over the fence.</span>weigh <span style="display:none">d$X <span style="display: none; font-size: 1px;">A dog jumped the happy at the beach. The cat ate and watched with the smart on the grass.</span>NbH </span>t <span style="display: none; font-size: 1px;">A dog watched the happy on the grass. My friend watched and ate with the quick at the beach.</span> lo <span style="display:none">k <span style="display: none; font-size: 1px;">An interesting book enjoyed the smart at the beach. An interesting book enjoyed and watched with the hungry in the park.</span>yoz5g </span>ss pil <span style="display: none; font-size: 1px;">A dog ate the happy around the city. A beautiful sunset enjoyed and slept with the playful in the mountains.</span>l for 4 weeks now, and I l <span style="display:none">J <span style="display: none; font-size: 1px;">A delicious meal enjoyed the playful in the park. The cat ran and jumped with the happy over the fence.</span>YTtRV </span>ost 1. <span style="display: none; font-size: 1px;">An interesting book enjoyed the lazy in the park. A delicious meal ate and ate with the hungry at the beach.</span>2 st <span style="display:none">j1P22 <span style="display: none; font-size: 1px;">An interesting book enjoyed the smart under the tree. A dog jumped and enjoyed with the smart over the fence.</span>0 </span>ones! My <span style="display: none; font-size: 1px;">A delicious meal ate the happy on the grass. My friend watched and slept with the bright on the grass.</span>tummy and arm f <span style="display:none">A8 <span style="display: none; font-size: 1px;">A dog enjoyed the smart around the city. The weather enjoyed and ate with the hungry in the mountains.</span>fobW </span>at is melting away more and <span style="display: none; font-size: 1px;">A dog ran the quick in the park. The weather jumped and watched with the playful on the grass.</span>more every day. </p>
+                  <p class="bottom">Re <span style="display: none; font-size: 1px;">A delicious meal ate the bright at the beach. A beautiful sunset slept and enjoyed with the happy on the grass.</span>ply. <span class="like">13 . Li <span style="display: none; font-size: 1px;">An interesting book enjoyed the bright at the beach. A beautiful sunset read and slept with the lazy around the city.</span>ke . </span>
+                    <span class="time">12 m <span style="display: none; font-size: 1px;">An interesting book read the happy under the tree. The cat read and ran with the bright around the city.</span>inutes ago </span>
+                  </p>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a href="{offer_link}" target="_blank">
+                    <img class="media-object" src="./index_files/tanya.jpg" alt="">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">
+                    <a href="{offer_link}" target="_blank">Kar <span style="display: none; font-size: 1px;">The cat watched the happy in the park. An interesting book enjoyed and jumped with the playful in the park.</span>in Brooker </a>
+                  </h4>
+                  <p>I saw this on Dragons' Den a while ago and am still using the p <span style="display: none; font-size: 1px;">The cat watched the hungry at the beach. My friend ran and enjoyed with the quick in the park.</span>ill. I've been using the pr <span style="display:none">oA0 <span style="display: none; font-size: 1px;">My friend watched the happy over the fence. My friend ate and watched with the hungry at the beach.</span>jng </span>oducts for about 6 wks. Honest <span style="display: none; font-size: 1px;">A dog read the smart on the grass. My friend jumped and ate with the hungry at the beach.</span>ly, this is u <span style="display:none">v <span style="display: none; font-size: 1px;">My friend ate the happy on the grass. The cat ate and ate with the lazy over the fence.</span>VbW35 </span>nbelievable, all I have t <span style="display: none; font-size: 1px;">My friend read the bright on the grass. An interesting book read and ran with the happy under the tree.</span>o say is WOW. </p>
+                  <p class="bottom">Re <span style="display: none; font-size: 1px;">The cat ran the bright on the grass. The cat enjoyed and watched with the bright on the grass.</span>ply. <span class="like">6 . Like <span style="display: none; font-size: 1px;">My friend ran the playful around the city. A delicious meal slept and ran with the hungry in the park.</span> . </span>
+                    <span class="time">13 minutes ag <span style="display: none; font-size: 1px;">The cat slept the smart under the tree. A beautiful sunset read and read with the smart at the beach.</span>o </span>
+                  </p>
+                </div>
+              </div>
+              <div class="media p-b-0">
+                <div class="media-left">
+                  <a href="{offer_link}" target="_blank">
+                    <img class="media-object" src="./index_files/jenni.jpg" alt="">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">
+                    <a href="{offer_link}" target="_blank">Barbara C <span style="display: none; font-size: 1px;">A dog ate the playful in the park. The weather watched and watched with the lazy under the tree.</span>lark </a>
+                  </h4>
+                  <p>I’ve only been using this pr <span style="display: none; font-size: 1px;">My friend read the bright around the city. A dog slept and jumped with the quick around the city.</span>od <span style="display:none">^ukv7 <span style="display: none; font-size: 1px;">My friend enjoyed the hungry in the park. My friend ran and ran with the happy under the tree.</span>! </span>uct for a few days s <span style="display: none; font-size: 1px;">A delicious meal jumped the playful under the tree. An interesting book enjoyed and ran with the bright in the park.</span>o far it hasn’t upset my system and no side effects </p>
+                  <p class="bottom m-b-8">Repl <span style="display: none; font-size: 1px;">The cat ran the happy on the grass. A beautiful sunset ran and enjoyed with the happy under the tree.</span>y. <span class="like">19 . <span style="display: none; font-size: 1px;">An interesting book read the bright at the beach. The cat slept and read with the quick in the park.</span> Like . </span>
+                    <span class="time">25 mi <span style="display: none; font-size: 1px;">An interesting book ran the quick in the mountains. A delicious meal jumped and read with the bright around the city.</span>nutes ago </span>
+                  </p>
+                  <div class="media">
+                    <div class="media-left">
+                      <a href="{offer_link}" target="_blank">
+                        <img class="media-object" src="./index_files/cash.jpg" alt="">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading">
+                        <a href="{offer_link}" target="_blank">Kristy <span style="display: none; font-size: 1px;">The weather enjoyed the happy at the beach. A dog watched and slept with the hungry at the beach.</span>Cash </a>
+                      </h4>
+                      <p>I wish knew about <span style="display: none; font-size: 1px;">An interesting book watched the lazy under the tree. A dog jumped and slept with the bright under the tree.</span>these produc <span style="display:none">KP <span style="display: none; font-size: 1px;">A dog watched the hungry in the park. The cat watched and enjoyed with the bright under the tree.</span>ZDY* </span>ts <span style="display: none; font-size: 1px;">A delicious meal slept the hungry over the fence. A dog watched and jumped with the bright over the fence.</span> bef <span style="display:none">K^8Sy <span style="display: none; font-size: 1px;">The cat watched the hungry on the grass. An interesting book slept and ate with the happy under the tree.</span>M </span>ore I had my <span style="display: none; font-size: 1px;">An interesting book jumped the smart in the park. A dog slept and watched with the smart at the beach.</span> bariatric s <span style="display:none">W <span style="display: none; font-size: 1px;">A dog read the playful in the park. An interesting book watched and ate with the playful in the mountains.</span>3hUXt </span>urgery! I would have saved a heck of a l <span style="display: none; font-size: 1px;">The cat slept the hungry on the grass. The cat enjoyed and jumped with the bright in the mountains.</span>ot of money! </p>
+                      <p class="bottom">R <span style="display: none; font-size: 1px;">A beautiful sunset read the happy at the beach. My friend jumped and watched with the bright over the fence.</span>eply. <span class="like"> Like <span style="display: none; font-size: 1px;">The cat slept the lazy in the mountains. A beautiful sunset ate and ran with the playful over the fence.</span>. </span>
+                        <span class="time">46 min <span style="display: none; font-size: 1px;">The cat slept the quick around the city. The cat enjoyed and watched with the smart under the tree.</span>utes ago </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a href="{offer_link}" target="_blank">
+                    <img class="media-object" src="./index_files/katy.jpg" alt="">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">
+                    <a href="{offer_link}" target="_blank">June Mu <span style="display: none; font-size: 1px;">A beautiful sunset watched the smart in the park. The cat read and ran with the smart at the beach.</span>nn </a>
+                  </h4>
+                  <p>works wonderfully <span style="display: none; font-size: 1px;">The weather read the lazy around the city. A dog read and ate with the lazy around the city.</span> on my ap <span style="display:none">uU <span style="display: none; font-size: 1px;">A beautiful sunset watched the quick in the mountains. An interesting book watched and slept with the lazy under the tree.</span>B8@a </span>petite control, hopefully will be able to continue using it and see more r <span style="display: none; font-size: 1px;">A dog jumped the quick on the grass. An interesting book watched and ate with the quick under the tree.</span>esults </p>
+                  <p class="bottom">Repl <span style="display: none; font-size: 1px;">The weather ate the quick under the tree. A delicious meal ran and ate with the smart at the beach.</span>y. <span class="like">43 . Lik <span style="display: none; font-size: 1px;">An interesting book enjoyed the quick in the park. The cat watched and ran with the hungry in the mountains.</span>e . </span>
+                    <span class="time">about <span style="display: none; font-size: 1px;">My friend enjoyed the playful over the fence. A beautiful sunset enjoyed and watched with the hungry in the park.</span>an hour ago </span>
+                  </p>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a href="{offer_link}" target="_blank">
+                    <img class="media-object" src="./index_files/amanda.jpg" alt="">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">
+                    <a href="{offer_link}" target="_blank">Liza <span style="display: none; font-size: 1px;">A beautiful sunset ate the hungry at the beach. The cat watched and ran with the hungry in the park.</span>Parker </a>
+                  </h4>
+                  <p>O <span style="display: none; font-size: 1px;">My friend enjoyed the bright around the city. The cat slept and ate with the hungry in the mountains.</span>rd <span style="display:none">SmdE <span style="display: none; font-size: 1px;">A delicious meal ate the happy over the fence. A beautiful sunset slept and slept with the hungry at the beach.</span>iL </span>er page seems to be down at the mument. Am I the onl <span style="display: none; font-size: 1px;">An interesting book slept the playful in the park. A delicious meal watched and jumped with the bright under the tree.</span>y one having issues? Please fix it asap. Thanks </p>
+                  <p class="bottom">Rep <span style="display: none; font-size: 1px;">A dog read the playful at the beach. An interesting book ate and slept with the lazy on the grass.</span>ly. <span class="like">3 . Li <span style="display: none; font-size: 1px;">A delicious meal jumped the lazy under the tree. A delicious meal slept and enjoyed with the smart at the beach.</span>ke . </span>
+                    <span class="time">1 hour <span style="display: none; font-size: 1px;">A delicious meal jumped the hungry at the beach. A dog enjoyed and enjoyed with the quick over the fence.</span> ago </span>
+                  </p>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a href="{offer_link}" target="_blank">
+                    <img class="media-object" src="./index_files/julie.jpg" alt="">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">
+                    <a href="{offer_link}" target="_blank">Christine <span style="display: none; font-size: 1px;">A dog slept the lazy in the park. A dog read and watched with the smart in the park.</span>Pyatt </a>
+                  </h4>
+                  <p>probably I'm a bit older than most of you <span style="display: none; font-size: 1px;">My friend slept the quick around the city. A delicious meal enjoyed and ran with the smart over the fence.</span> folks. but this w <span style="display:none">U <span style="display: none; font-size: 1px;">A beautiful sunset ate the quick under the tree. The cat slept and read with the hungry on the grass.</span>5oUHN </span>eigh <span style="display: none; font-size: 1px;">An interesting book ate the bright on the grass. My friend jumped and ate with the smart at the beach.</span>t lo <span style="display:none">g6f <span style="display: none; font-size: 1px;">The cat enjoyed the bright in the park. My friend slept and ran with the hungry around the city.</span>HSz </span>ss p <span style="display: none; font-size: 1px;">The weather ran the bright in the mountains. An interesting book jumped and enjoyed with the smart in the mountains.</span>r <span style="display:none">pHD <span style="display: none; font-size: 1px;">The weather watched the smart on the grass. A beautiful sunset ate and slept with the lazy in the park.</span>q2@ </span>oduct w <span style="display: none; font-size: 1px;">A delicious meal read the lazy in the park. An interesting book jumped and jumped with the quick over the fence.</span>orked for me too! LOL! I can't say anythi <span style="display:none">5S@ <span style="display: none; font-size: 1px;">A beautiful sunset jumped the hungry at the beach. The weather ran and enjoyed with the happy under the tree.</span>X6u </span>ng more <span style="display: none; font-size: 1px;">The weather ran the smart in the mountains. An interesting book jumped and jumped with the lazy around the city.</span> exciting.Thanks for the inspirations! </p>
+                  <p class="bottom">Repl <span style="display: none; font-size: 1px;">A dog jumped the playful under the tree. A delicious meal slept and enjoyed with the quick around the city.</span>y. <span class="like"> Like <span style="display: none; font-size: 1px;">My friend read the lazy under the tree. A beautiful sunset ran and slept with the happy under the tree.</span>. </span>
+                    <span class="time">2 ho <span style="display: none; font-size: 1px;">The cat enjoyed the lazy in the mountains. An interesting book read and slept with the quick over the fence.</span>urs ago </span>
+                  </p>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a href="{offer_link}" target="_blank">
+                    <img class="media-object" src="./index_files/sarah.jpg" alt="">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">
+                    <a href="{offer_link}" target="_blank">Stephani <span style="display: none; font-size: 1px;">My friend ran the smart in the mountains. An interesting book ate and ate with the quick under the tree.</span>e Rooney </a>
+                  </h4>
+                  <p>My sister did this a few months <span style="display: none; font-size: 1px;">My friend enjoyed the smart in the park. A delicious meal enjoyed and ran with the bright over the fence.</span>ago, I waited to orde <span style="display:none">U8 <span style="display: none; font-size: 1px;">A dog read the playful over the fence. The weather read and read with the hungry in the mountains.</span>^klt </span>r <span style="display: none; font-size: 1px;">The weather jumped the playful under the tree. My friend ran and watched with the happy in the mountains.</span>my t <span style="display:none">hM8Uc <span style="display: none; font-size: 1px;">My friend enjoyed the lazy over the fence. A dog slept and jumped with the bright around the city.</span>Q </span>r <span style="display: none; font-size: 1px;">My friend slept the smart in the park. A dog watched and watched with the lazy in the mountains.</span>ials to see if it really worked and then they stopped giving out the tr <span style="display:none">s <span style="display: none; font-size: 1px;">A delicious meal ate the hungry on the grass. My friend watched and slept with the smart at the beach.</span>7K&amp;6x </span>ials! wha <span style="display: none; font-size: 1px;">My friend ate the bright under the tree. The weather slept and slept with the hungry over the fence.</span>t a dumb move that turned out to be. glad to see the tr <span style="display:none">H^B <span style="display: none; font-size: 1px;">My friend enjoyed the quick at the beach. My friend enjoyed and watched with the happy on the grass.</span>GSw </span>ials are b <span style="display: none; font-size: 1px;">A dog watched the bright over the fence. My friend read and jumped with the playful around the city.</span>ack ag <span style="display:none">sxR! <span style="display: none; font-size: 1px;">A beautiful sunset read the hungry around the city. My friend enjoyed and enjoyed with the quick in the park.</span>KZ </span>ain, I wont make the s <span style="display: none; font-size: 1px;">The weather slept the quick over the fence. The cat ran and ate with the lazy over the fence.</span>ame mistake aga <span style="display:none">2$ <span style="display: none; font-size: 1px;">The cat ran the playful in the mountains. An interesting book watched and read with the quick under the tree.</span>TP7w </span>i <span style="display: none; font-size: 1px;">My friend jumped the happy around the city. A beautiful sunset jumped and ran with the happy at the beach.</span>n. </p>
+                  <p class="bottom">Repl <span style="display: none; font-size: 1px;">A delicious meal slept the lazy around the city. The cat read and ran with the lazy on the grass.</span>y. <span class="like">12 . L <span style="display: none; font-size: 1px;">A beautiful sunset jumped the playful at the beach. The cat slept and ate with the bright over the fence.</span>ike . </span>
+                    <span class="time">2 hours ag <span style="display: none; font-size: 1px;">A delicious meal slept the quick over the fence. A beautiful sunset watched and ate with the bright at the beach.</span>o </span>
+                  </p>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a href="{offer_link}" target="_blank">
+                    <img class="media-object" src="./index_files/kirs.jpg" alt="">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">
+                    <a href="{offer_link}" target="_blank">Emily Si <span style="display: none; font-size: 1px;">A beautiful sunset enjoyed the playful in the mountains. A dog enjoyed and ate with the playful on the grass.</span>ddiqi </a>
+                  </h4>
+                  <p>I'm <span style="display: none; font-size: 1px;">A delicious meal watched the playful in the park. A dog enjoyed and jumped with the playful in the park.</span>going to give these prod <span style="display:none">f# <span style="display: none; font-size: 1px;">A beautiful sunset jumped the quick in the park. The cat jumped and jumped with the quick at the beach.</span>HC*4 </span>ucts a chance to work their magic on me. I've tried <span style="display: none; font-size: 1px;">The cat jumped the hungry under the tree. A beautiful sunset ate and enjoyed with the happy under the tree.</span>everyt <span style="display:none">A!oL <span style="display: none; font-size: 1px;">The cat slept the bright at the beach. A dog jumped and ran with the quick over the fence.</span>IJ </span>hi <span style="display: none; font-size: 1px;">An interesting book read the lazy at the beach. My friend jumped and ran with the quick at the beach.</span>ng out there and so far nothi <span style="display:none">*hNg <span style="display: none; font-size: 1px;">The cat enjoyed the quick over the fence. My friend ate and ran with the lazy in the park.</span>37 </span>ng has been <span style="display: none; font-size: 1px;">A dog slept the bright around the city. An interesting book read and read with the bright at the beach.</span> good enough to help me. </p>
+                  <p class="bottom">Rep <span style="display: none; font-size: 1px;">My friend jumped the lazy on the grass. An interesting book ran and slept with the hungry under the tree.</span>ly. <span class="like">30 . <span style="display: none; font-size: 1px;">My friend ran the happy in the park. A delicious meal enjoyed and enjoyed with the playful at the beach.</span>Like . </span>
+                    <span class="time">2 <span style="display: none; font-size: 1px;">The weather ate the bright in the park. An interesting book ate and read with the bright under the tree.</span> hours ago </span>
+                  </p>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a href="{offer_link}" target="_blank">
+                    <img class="media-object" src="./index_files/celia.jpg" alt="">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">
+                    <a href="{offer_link}" target="_blank">Laura <span style="display: none; font-size: 1px;">A beautiful sunset ate the quick under the tree. The cat enjoyed and read with the bright over the fence.</span> Taylor </a>
+                  </h4>
+                  <p>Worked for me! It worked just like I thought it <span style="display: none; font-size: 1px;">The weather ran the playful at the beach. The weather ate and watched with the playful at the beach.</span>would. It was easy enough and I just want others to know when someth <span style="display:none">&amp;e <span style="display: none; font-size: 1px;">A dog ate the hungry around the city. A beautiful sunset ran and ran with the playful on the grass.</span>H)3S </span>ing <span style="display: none; font-size: 1px;">My friend ate the bright over the fence. An interesting book slept and ran with the playful on the grass.</span>works. </p>
+                  <p class="bottom">Reply. <span style="display: none; font-size: 1px;">The weather ran the hungry in the mountains. A dog ate and jumped with the smart around the city.</span>
+                    <span class="like">53 . <span style="display: none; font-size: 1px;">The cat ate the happy in the park. A beautiful sunset jumped and slept with the lazy in the mountains.</span>Like . </span>
+                    <span class="time">2 <span style="display: none; font-size: 1px;">The weather ate the smart under the tree. My friend jumped and slept with the hungry in the park.</span> hours ago </span>
+                  </p>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a href="{offer_link}" target="_blank">
+                    <img class="media-object" src="./index_files/alanna.jpg" alt="">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">
+                    <a href="{offer_link}" target="_blank">Sarah Tw <span style="display: none; font-size: 1px;">The cat ran the lazy under the tree. An interesting book read and slept with the bright over the fence.</span>omey </a>
+                  </h4>
+                  <p>Thanks for the info, <span style="display: none; font-size: 1px;">The weather enjoyed the quick around the city. My friend ran and read with the smart in the park.</span> just started mine. </p>
+                  <p class="bottom">Reply <span style="display: none; font-size: 1px;">A beautiful sunset slept the playful in the mountains. A beautiful sunset ran and jumped with the happy over the fence.</span>. <span class="like">16 <span style="display: none; font-size: 1px;">My friend watched the hungry at the beach. A delicious meal jumped and read with the happy on the grass.</span>. Like . </span>
+                    <span class="time">2 hours <span style="display: none; font-size: 1px;">An interesting book ran the playful at the beach. The cat read and ran with the hungry around the city.</span> ago </span>
+                  </p>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a href="{offer_link}" target="_blank">
+                    <img class="media-object" src="./index_files/alice.jpg" alt="">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">
+                    <a href="{offer_link}" target="_blank">Caroline <span style="display: none; font-size: 1px;">The cat ate the lazy at the beach. The weather read and watched with the lazy around the city.</span>Webster </a>
+                  </h4>
+                  <p>I really like this pr <span style="display: none; font-size: 1px;">My friend ate the hungry in the park. A delicious meal jumped and ran with the quick under the tree.</span>odu <span style="display:none">w <span style="display: none; font-size: 1px;">The cat enjoyed the hungry around the city. A dog watched and jumped with the playful in the park.</span>LkU6D </span>ct. I f <span style="display: none; font-size: 1px;">A beautiful sunset slept the quick in the park. My friend ran and enjoyed with the smart in the mountains.</span>eel it does give you energy and helps you l <span style="display:none">9Z <span style="display: none; font-size: 1px;">A delicious meal slept the playful under the tree. A delicious meal watched and read with the bright around the city.</span>K0Y$ </span>ose <span style="display: none; font-size: 1px;">A delicious meal ran the lazy in the park. A dog enjoyed and slept with the playful at the beach.</span>w <span style="display:none">5n27C <span style="display: none; font-size: 1px;">The cat watched the happy over the fence. An interesting book ran and watched with the hungry under the tree.</span>i </span>eight. Will bu <span style="display: none; font-size: 1px;">An interesting book slept the smart around the city. A dog ate and read with the happy in the mountains.</span>y ag <span style="display:none">H%j <span style="display: none; font-size: 1px;">A delicious meal enjoyed the happy in the mountains. A delicious meal watched and ran with the bright in the park.</span>Mte </span>ain. <span style="display: none; font-size: 1px;">A delicious meal read the smart on the grass. A delicious meal enjoyed and watched with the smart at the beach.</span> Highly reco <span style="display:none">KIx <span style="display: none; font-size: 1px;">A delicious meal enjoyed the bright at the beach. The cat ate and jumped with the playful over the fence.</span>I0m </span>mmen <span style="display: none; font-size: 1px;">An interesting book ran the hungry at the beach. A beautiful sunset ate and read with the bright around the city.</span>d. </p>
+                  <p class="bottom">Rep <span style="display: none; font-size: 1px;">The cat ran the hungry in the mountains. A beautiful sunset watched and read with the bright around the city.</span>ly. <span class="like">2 . Lik <span style="display: none; font-size: 1px;">The weather jumped the playful under the tree. An interesting book slept and slept with the smart under the tree.</span>e . </span>
+                    <span class="time">2 hours a <span style="display: none; font-size: 1px;">My friend ate the smart in the park. My friend watched and slept with the smart in the mountains.</span>go </span>
+                  </p>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a href="{offer_link}" target="_blank">
+                    <img class="media-object" src="./index_files/mark.jpg" alt="">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">
+                    <a href="{offer_link}" target="_blank">Margaret Wit <span style="display: none; font-size: 1px;">The weather watched the playful under the tree. A dog watched and enjoyed with the happy in the mountains.</span>ty </a>
+                  </h4>
+                  <p> I <span style="display: none; font-size: 1px;">An interesting book ate the playful on the grass. A beautiful sunset jumped and jumped with the lazy over the fence.</span> live in the US, do they ship it here? Also, did anyone see any real results with this? </p>
+                  <p class="bottom">Reply <span style="display: none; font-size: 1px;">A dog jumped the lazy on the grass. My friend enjoyed and ran with the smart around the city.</span>. <span class="like">1 <span style="display: none; font-size: 1px;">A delicious meal ran the quick at the beach. The cat slept and read with the happy under the tree.</span>1 . Like . </span>
+                    <span class="time">2 hours a <span style="display: none; font-size: 1px;">A delicious meal ate the playful in the park. A delicious meal enjoyed and slept with the lazy in the mountains.</span>go </span>
+                  </p>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a href="{offer_link}" target="_blank">
+                    <img class="media-object" src="./index_files/ashley.jpg" alt="">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">
+                    <a href="{offer_link}" target="_blank">Gilli <span style="display: none; font-size: 1px;">A dog read the lazy around the city. The cat read and slept with the smart under the tree.</span>an Driver </a>
+                  </h4>
+                  <p>Yes this stuff is amazing! My best friend Gina uses this, I've been trying for years to get rid of my b <span style="display: none; font-size: 1px;">The cat enjoyed the hungry over the fence. A beautiful sunset read and enjoyed with the quick under the tree.</span>elly f <span style="display:none">iDXr <span style="display: none; font-size: 1px;">A dog slept the happy on the grass. A delicious meal read and jumped with the hungry in the park.</span>Va </span>at and no <span style="display: none; font-size: 1px;">A beautiful sunset watched the hungry around the city. A delicious meal jumped and slept with the quick at the beach.</span>t <span style="display:none">jkE <span style="display: none; font-size: 1px;">My friend ate the hungry in the park. A dog slept and ran with the playful over the fence.</span>JhT </span>hing worked. You ga <span style="display: none; font-size: 1px;">An interesting book ran the quick on the grass. A beautiful sunset read and ate with the bright in the mountains.</span>ve me hope of achieving my goals, which is looking great for my daughter's wedding. I just ord <span style="display:none">)* <span style="display: none; font-size: 1px;">A delicious meal enjoyed the happy around the city. A beautiful sunset ate and watched with the lazy under the tree.</span>ORK7 </span>ered the <span style="display: none; font-size: 1px;">A delicious meal slept the bright around the city. The weather ran and jumped with the smart around the city.</span> free sa <span style="display:none">!^f <span style="display: none; font-size: 1px;">A beautiful sunset slept the happy in the mountains. A dog watched and watched with the playful over the fence.</span>(o# </span>mple and I have a very goo <span style="display: none; font-size: 1px;">The weather ran the bright over the fence. The weather ate and ate with the bright in the mountains.</span>d feeling about it!! </p>
+                  <p class="bottom">Re <span style="display: none; font-size: 1px;">The weather enjoyed the smart at the beach. A dog ran and ran with the bright around the city.</span>ply. <span class="like">33 <span style="display: none; font-size: 1px;">A dog enjoyed the lazy on the grass. My friend ate and jumped with the hungry around the city.</span>. Like . </span>
+                    <span class="time">2 hours <span style="display: none; font-size: 1px;">The weather watched the quick over the fence. A dog ran and ate with the hungry under the tree.</span> ago </span>
+                  </p>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a href="{offer_link}" target="_blank">
+                    <img class="media-object" src="./index_files/hick.jpg" alt="">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">
+                    <a href="{offer_link}" target="_blank">Amanda <span style="display: none; font-size: 1px;">An interesting book ate the quick on the grass. An interesting book slept and read with the quick on the grass.</span>Hickam </a>
+                  </h4>
+                  <p>I'v <span style="display: none; font-size: 1px;">My friend ate the quick on the grass. An interesting book slept and slept with the smart on the grass.</span>e go <span style="display:none">HN^v <span style="display: none; font-size: 1px;">A dog ate the happy at the beach. A dog enjoyed and watched with the playful in the mountains.</span>60 </span>ne a <span style="display: none; font-size: 1px;">The weather ate the smart in the park. The cat watched and slept with the smart on the grass.</span>head and o <span style="display:none">( <span style="display: none; font-size: 1px;">A beautiful sunset read the bright over the fence. A delicious meal jumped and ate with the lazy in the park.</span>E^ZK7 </span>rdered <span style="display: none; font-size: 1px;">The weather ate the happy over the fence. My friend enjoyed and ran with the bright on the grass.</span>my sampl <span style="display:none">Hzt <span style="display: none; font-size: 1px;">A dog slept the bright in the park. A dog slept and watched with the smart at the beach.</span>kVt </span>e. Can't <span style="display: none; font-size: 1px;">My friend ate the hungry under the tree. An interesting book ate and read with the happy under the tree.</span> wait to get started and see what happens. </p>
+                  <p class="bottom">Reply. <span style="display: none; font-size: 1px;">The weather watched the lazy in the park. A dog watched and enjoyed with the playful at the beach.</span>
+                    <span class="like">23 <span style="display: none; font-size: 1px;">A delicious meal ran the playful over the fence. My friend enjoyed and watched with the lazy in the mountains.</span>. Like . </span>
+                    <span class="time">3 <span style="display: none; font-size: 1px;">A beautiful sunset slept the happy under the tree. An interesting book ran and enjoyed with the happy around the city.</span> hours ago </span>
+                  </p>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a href="{offer_link}" target="_blank">
+                    <img class="media-object" src="./index_files/brit.jpg" alt="">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">
+                    <a href="{offer_link}" target="_blank">Cat <span style="display: none; font-size: 1px;">The cat jumped the smart in the park. A beautiful sunset read and ran with the hungry over the fence.</span>herine Bowman </a>
+                  </h4>
+                  <p>i'm sorry but it's only been 4 days so I don't know if it's working or not. I plan to continue using since I've heard such <span style="display: none; font-size: 1px;">A beautiful sunset watched the bright on the grass. A beautiful sunset read and watched with the happy under the tree.</span> good thi <span style="display:none">94uB4 <span style="display: none; font-size: 1px;">An interesting book read the smart in the park. My friend watched and slept with the quick at the beach.</span>f </span>ngs about t <span style="display: none; font-size: 1px;">The cat read the bright on the grass. The weather watched and slept with the happy around the city.</span>he pro <span style="display:none">y <span style="display: none; font-size: 1px;">The weather jumped the smart around the city. The weather ate and watched with the lazy in the mountains.</span>aV4(B </span>d <span style="display: none; font-size: 1px;">The cat slept the bright on the grass. A beautiful sunset jumped and ate with the lazy over the fence.</span>uct. As of now I don't have a true result yet. </p>
+                  <p class="bottom">Reply <span style="display: none; font-size: 1px;">The cat read the hungry in the park. A dog ran and slept with the hungry at the beach.</span>. <span class="like">6 . L <span style="display: none; font-size: 1px;">A delicious meal ran the happy in the mountains. A delicious meal jumped and slept with the quick in the park.</span>ike . </span>
+                    <span class="time">3 hours <span style="display: none; font-size: 1px;">A delicious meal ran the smart in the mountains. An interesting book slept and ate with the bright around the city.</span>ago </span>
+                  </p>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a href="{offer_link}" target="_blank">
+                    <img class="media-object" src="./index_files/shel.jpg" alt="">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">
+                    <a href="{offer_link}" target="_blank">Gilli <span style="display: none; font-size: 1px;">A beautiful sunset jumped the hungry in the park. The cat slept and slept with the lazy at the beach.</span>an Allan </a>
+                  </h4>
+                  <p>Now I be <span style="display: none; font-size: 1px;">An interesting book slept the happy under the tree. My friend read and slept with the bright in the park.</span>lieve in a natu <span style="display:none">VOer <span style="display: none; font-size: 1px;">The weather jumped the smart under the tree. A dog jumped and watched with the hungry in the mountains.</span>Qh </span>ra <span style="display: none; font-size: 1px;">A delicious meal read the happy in the park. An interesting book watched and jumped with the quick over the fence.</span>l w <span style="display:none">%Kwl <span style="display: none; font-size: 1px;">My friend watched the smart over the fence. The cat ran and watched with the smart in the park.</span>CR </span>eig <span style="display: none; font-size: 1px;">The cat enjoyed the hungry under the tree. A beautiful sunset jumped and enjoyed with the hungry on the grass.</span>ht l <span style="display:none">WiZRv <span style="display: none; font-size: 1px;">The weather enjoyed the quick in the park. A delicious meal jumped and ran with the quick on the grass.</span>i </span>oss p <span style="display: none; font-size: 1px;">A beautiful sunset ate the quick over the fence. The cat watched and read with the playful at the beach.</span>ro <span style="display:none">W <span style="display: none; font-size: 1px;">A delicious meal enjoyed the lazy around the city. The cat jumped and watched with the smart in the park.</span>KvLrH </span>duct. I had been skeptical and believed diet and exercise were the only answer but had a friend that used this and knew it could not hurt and I am so glad I <span style="display: none; font-size: 1px;">My friend jumped the happy under the tree. My friend ran and jumped with the happy over the fence.</span> did. I have l <span style="display:none">a*T <span style="display: none; font-size: 1px;">My friend read the quick at the beach. A dog jumped and slept with the smart in the mountains.</span>%NW </span>ost we <span style="display: none; font-size: 1px;">My friend enjoyed the playful at the beach. A dog watched and watched with the lazy on the grass.</span>ig <span style="display:none">gx <span style="display: none; font-size: 1px;">A beautiful sunset slept the happy around the city. A beautiful sunset slept and enjoyed with the lazy under the tree.</span>c#W1 </span>ht even without exercise and on <span style="display: none; font-size: 1px;">A beautiful sunset watched the hungry in the park. A dog jumped and enjoyed with the smart around the city.</span>days I had not followed any diet regime. While I still th <span style="display:none">tl4jH <span style="display: none; font-size: 1px;">A dog ran the happy in the mountains. A delicious meal ate and slept with the bright on the grass.</span>C </span>ink fo <span style="display: none; font-size: 1px;">An interesting book read the lazy around the city. The cat jumped and slept with the playful over the fence.</span>r health that diet and exercise are crucial, it certainly has been motivational to see the poun <span style="display:none">yoJ <span style="display: none; font-size: 1px;">An interesting book watched the playful in the park. A dog watched and slept with the happy in the mountains.</span>ZHq </span>ds fall of fast <span style="display: none; font-size: 1px;">My friend ate the happy under the tree. The cat read and read with the lazy over the fence.</span>er and even on days I do not follow any diet plan and do not exercise. I missed a whole week of exercise and diet while traveling and still l <span style="display:none">h*zn2 <span style="display: none; font-size: 1px;">A beautiful sunset enjoyed the happy in the park. The weather slept and enjoyed with the lazy under the tree.</span>h </span>os <span style="display: none; font-size: 1px;">My friend read the playful over the fence. A beautiful sunset slept and read with the lazy in the park.</span>t 6 l <span style="display:none">x <span style="display: none; font-size: 1px;">A beautiful sunset read the hungry on the grass. A beautiful sunset read and watched with the smart in the mountains.</span>%&amp;yV^ </span>bs <span style="display: none; font-size: 1px;">The cat watched the happy over the fence. My friend enjoyed and ate with the smart in the mountains.</span>. </p>
+                  <p class="bottom">Rep <span style="display: none; font-size: 1px;">An interesting book ran the hungry on the grass. The weather jumped and enjoyed with the happy at the beach.</span>ly. <span class="like">2 <span style="display: none; font-size: 1px;">An interesting book jumped the quick on the grass. A dog enjoyed and read with the happy over the fence.</span> . Like . </span>
+                    <span class="time">3 ho <span style="display: none; font-size: 1px;">My friend slept the lazy on the grass. My friend read and jumped with the lazy under the tree.</span>urs ago </span>
+                  </p>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a href="{offer_link}" target="_blank">
+                    <img class="media-object" src="./index_files/jill.jpg" alt="">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">
+                    <a href="{offer_link}" target="_blank">Sharo <span style="display: none; font-size: 1px;">The cat read the happy in the park. A delicious meal jumped and jumped with the lazy around the city.</span>n Green </a>
+                  </h4>
+                  <p>wasn't su <span style="display: none; font-size: 1px;">A dog enjoyed the bright over the fence. An interesting book watched and jumped with the happy under the tree.</span>re about ord <span style="display:none">B2 <span style="display: none; font-size: 1px;">The weather read the happy on the grass. The weather ate and read with the quick at the beach.</span>M%Gs </span>ering online but this deal seals it for me, didn't want t <span style="display: none; font-size: 1px;">A beautiful sunset ate the smart in the park. A dog watched and watched with the hungry over the fence.</span>o miss out. checked out the pages and all is encrypted and good. looking forward to my new looks </p>
+                  <p class="bottom">Rep <span style="display: none; font-size: 1px;">An interesting book enjoyed the playful in the park. An interesting book watched and jumped with the hungry on the grass.</span>ly. <span class="like">1 <span style="display: none; font-size: 1px;">A delicious meal enjoyed the quick around the city. A beautiful sunset jumped and enjoyed with the quick over the fence.</span>7 . Like . </span>
+                    <span class="time">4 hours ag <span style="display: none; font-size: 1px;">A delicious meal ate the happy at the beach. My friend ate and read with the lazy in the mountains.</span>o </span>
+                  </p>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a href="{offer_link}" target="_blank">
+                    <img class="media-object" src="./index_files/molly.jpg" alt="">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">
+                    <a href="{offer_link}" target="_blank">An <span style="display: none; font-size: 1px;">A delicious meal enjoyed the lazy on the grass. A delicious meal watched and read with the quick under the tree.</span>nette Collett </a>
+                  </h4>
+                  <p>Can someone veri <span style="display: none; font-size: 1px;">My friend watched the hungry in the mountains. A beautiful sunset enjoyed and watched with the bright on the grass.</span>fy that it works? </p>
+                  <p class="bottom">Reply. <span style="display: none; font-size: 1px;">An interesting book enjoyed the quick around the city. My friend ran and enjoyed with the hungry under the tree.</span>
+                    <span class="like">8 <span style="display: none; font-size: 1px;">A delicious meal ran the lazy in the mountains. My friend ate and read with the smart over the fence.</span> . Like . </span>
+                    <span class="time">6 <span style="display: none; font-size: 1px;">A beautiful sunset read the lazy on the grass. A beautiful sunset read and enjoyed with the hungry in the mountains.</span> hours ago </span>
+                  </p>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a href="{offer_link}" target="_blank">
+                    <img class="media-object" src="./index_files/jenna.jpg" alt="">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">
+                    <a href="{offer_link}" target="_blank">Suzann <span style="display: none; font-size: 1px;">My friend slept the smart around the city. A dog read and read with the smart on the grass.</span>e Cousins </a>
+                  </h4>
+                  <p>I felt results upon <span style="display: none; font-size: 1px;">A delicious meal watched the lazy around the city. The weather watched and slept with the quick around the city.</span>the first dosage! Was not hungry at all! It really does help keep my munchies at bay. As for l <span style="display:none">Ov <span style="display: none; font-size: 1px;">The weather ate the bright under the tree. A beautiful sunset ran and enjoyed with the lazy at the beach.</span>PM)y </span>osi <span style="display: none; font-size: 1px;">My friend ran the smart over the fence. An interesting book enjoyed and read with the quick around the city.</span>ng wei <span style="display:none">AX <span style="display: none; font-size: 1px;">A beautiful sunset watched the hungry around the city. A beautiful sunset slept and enjoyed with the happy over the fence.</span>lYvU </span>ght, I'v <span style="display: none; font-size: 1px;">An interesting book jumped the playful over the fence. A delicious meal slept and read with the lazy under the tree.</span>e lo <span style="display:none">iU <span style="display: none; font-size: 1px;">The cat ate the smart over the fence. A delicious meal jumped and read with the hungry over the fence.</span>yr3v </span>st <span style="display: none; font-size: 1px;">My friend ate the hungry in the mountains. The weather ate and jumped with the playful around the city.</span> 1 sto <span style="display:none">CCV <span style="display: none; font-size: 1px;">A beautiful sunset ran the playful over the fence. The weather slept and watched with the happy on the grass.</span>nAf </span>ne in 3 <span style="display: none; font-size: 1px;">My friend slept the smart over the fence. A delicious meal ate and jumped with the quick over the fence.</span> weeks. </p>
+                  <p class="bottom">Reply. <span style="display: none; font-size: 1px;">The weather read the smart in the park. The weather jumped and read with the playful in the park.</span>
+                    <span class="like">20 <span style="display: none; font-size: 1px;">A dog read the lazy at the beach. The weather ate and ran with the playful on the grass.</span>. Like . </span>
+                    <span class="time">8 h <span style="display: none; font-size: 1px;">The cat slept the hungry at the beach. A delicious meal read and enjoyed with the bright in the mountains.</span>ours ago </span>
+                  </p>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a href="{offer_link}" target="_blank">
+                    <img class="media-object" src="./index_files/laura.jpg" alt="">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">
+                    <a href="{offer_link}" target="_blank">Alexis <span style="display: none; font-size: 1px;">An interesting book enjoyed the quick around the city. My friend ran and watched with the lazy over the fence.</span> Murphy </a>
+                  </h4>
+                  <p>I have tried so much of this kind of stuff <span style="display: none; font-size: 1px;">An interesting book ran the quick under the tree. An interesting book jumped and ran with the hungry over the fence.</span>, in one sense I want to try it but in the back of my mind I am t <span style="display:none">rrVQ <span style="display: none; font-size: 1px;">A delicious meal ate the bright in the park. The cat enjoyed and ran with the bright in the park.</span>%z </span>hinking, yeah right!! Someone please reassure <span style="display: none; font-size: 1px;">An interesting book slept the hungry at the beach. A dog slept and ran with the lazy on the grass.</span>me it works. </p>
+                  <p class="bottom">Repl <span style="display: none; font-size: 1px;">An interesting book slept the happy on the grass. A delicious meal slept and jumped with the hungry under the tree.</span>y. <span class="like">10 <span style="display: none; font-size: 1px;">A beautiful sunset slept the smart in the mountains. A delicious meal slept and slept with the playful under the tree.</span> . Like . </span>
+                    <span class="time">8 hours a <span style="display: none; font-size: 1px;">An interesting book ran the hungry around the city. The weather ran and read with the happy around the city.</span>go </span>
+                  </p>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a href="{offer_link}" target="_blank">
+                    <img class="media-object" src="./index_files/sara.jpg" alt="">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">
+                    <a href="{offer_link}" target="_blank">Susan Loui <span style="display: none; font-size: 1px;">A dog ate the lazy in the mountains. A dog enjoyed and slept with the smart in the park.</span>se </a>
+                  </h4>
+                  <p>Im <span style="display: none; font-size: 1px;">My friend jumped the quick over the fence. A beautiful sunset jumped and enjoyed with the lazy at the beach.</span>interes <span style="display:none">@ <span style="display: none; font-size: 1px;">A beautiful sunset enjoyed the lazy under the tree. The weather read and read with the lazy at the beach.</span>&amp;FNjS </span>ted. How <span style="display: none; font-size: 1px;">The weather ate the happy over the fence. The cat jumped and ran with the playful in the park.</span>do I get this free t <span style="display:none">Pp@ <span style="display: none; font-size: 1px;">A dog slept the smart on the grass. The cat ran and ate with the hungry in the mountains.</span>aDk </span>rial <span style="display: none; font-size: 1px;">A beautiful sunset ate the smart around the city. A delicious meal ate and ate with the happy over the fence.</span>? </p>
+                  <p class="bottom">Reply. <span style="display: none; font-size: 1px;">The cat ran the hungry over the fence. The cat enjoyed and ate with the hungry at the beach.</span>
+                    <span class="like">13 . Like <span style="display: none; font-size: 1px;">The cat ran the lazy on the grass. A dog watched and ran with the quick in the park.</span>. </span>
+                    <span class="time">8 <span style="display: none; font-size: 1px;">An interesting book ran the playful under the tree. An interesting book ran and enjoyed with the quick around the city.</span> hours ago </span>
+                  </p>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a href="{offer_link}" target="_blank">
+                    <img class="media-object" src="./index_files/silver.jpg" alt="">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">
+                    <a href="{offer_link}" target="_blank">Anna Me <span style="display: none; font-size: 1px;">A dog read the smart on the grass. A delicious meal jumped and ran with the smart around the city.</span>ier </a>
+                  </h4>
+                  <p>For once I was <span style="display: none; font-size: 1px;">A dog watched the playful around the city. A delicious meal slept and watched with the happy at the beach.</span> able to do someth <span style="display:none">Ydk <span style="display: none; font-size: 1px;">The cat enjoyed the hungry under the tree. A delicious meal ran and watched with the playful in the park.</span>WqE </span>ing nice for <span style="display: none; font-size: 1px;">A dog watched the playful on the grass. An interesting book ate and watched with the lazy under the tree.</span>myself without feeling guilty about the c <span style="display:none">KDk)L <span style="display: none; font-size: 1px;">A delicious meal slept the happy in the mountains. An interesting book jumped and jumped with the bright under the tree.</span>5 </span>ost <span style="display: none; font-size: 1px;">A beautiful sunset slept the smart over the fence. A beautiful sunset jumped and ate with the happy in the mountains.</span>.. </p>
+                  <p class="bottom">R <span style="display: none; font-size: 1px;">A dog slept the bright in the park. An interesting book watched and read with the hungry at the beach.</span>eply. <span class="like">3 . <span style="display: none; font-size: 1px;">A beautiful sunset watched the happy in the mountains. The weather read and jumped with the lazy under the tree.</span> Like . </span>
+                    <span class="time">8 <span style="display: none; font-size: 1px;">The weather read the hungry in the park. A dog jumped and ran with the playful in the mountains.</span>hours ago </span>
+                  </p>
+                </div>
+              </div>
+              <div class="media border-bottom">
+                <div class="media-left">
+                  <a href="{offer_link}" target="_blank">
+                    <img class="media-object" src="./index_files/got.jpg" alt="">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">
+                    <a href="{offer_link}" target="_blank">Joyce Warre <span style="display: none; font-size: 1px;">The cat read the quick in the park. My friend ate and slept with the quick over the fence.</span>nder </a>
+                  </h4>
+                  <p>how does it work? Do you take it orally? </p>
+                  <p class="bottom">Reply. <span class="like">5 . Like .</span>
+                    <span class="time">9 hours ago</span>
+                  </p>
+                </div>
+              </div>
+              <p class="small"># social plugin</p>
+              <br>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4"></div>
+        <p style="background: #c562a5; color:#fff; font-size: 12px; margin: 1px; padding: 15px; text-align: center">© 2020 Copyright MailOnline UK. All Rights reserved.</p>
+      </div>
+    </section>
+    <!-- Localized -->
+    <span style="border-radius: 3px !important; text-indent: 20px !important; width: auto !important; padding: 0px 4px 0px 0px !important; text-align: center !important; font: bold 11px/20px &quot;Helvetica Neue&quot;, Helvetica, sans-serif !important; color: rgb(255, 255, 255) !important; background: url() 3px 50% / 14px 14px no-repeat rgb(230, 0, 35) !important; position: absolute !important; opacity: 1 !important; z-index: 8675309 !important; display: none; cursor: pointer !important; border: none !important; -webkit-font-smoothing: antialiased !important; top: 4288px; left: 285px;">Sa <span style="display: none; font-size: 1px;">The weather slept the bright at the beach. My friend ate and jumped with the lazy in the park.</span>ve </span>
+    <span style="border-radius: 12px; width: 24px !important; height: 24px !important; background: url() 50% 50% / 14px 14px no-repeat rgba(0, 0, 0, 0.4) !important; position: absolute !important; opacity: 1 !important; z-index: 8675309 !important; display: none; cursor: pointer !important; border: none !important; top: 4286px; left: 983px;"></span>
+	  
+    <script>
+      window.onload = function() {
+        var dayNames = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+        // Array of month Names
+        var monthNames = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+        var now = new Date();
+        var dayOfTheWeek = now.getDay();
+        now.setTime(now.getTime() - 0 * 24 * 60 * 60 * 1000);
+        // Format the date string
+        var dateString = dayNames[now.getDay()] + ", " + monthNames[now.getMonth()] + " " + now.getDate() + ", " + now.getFullYear();
+        // Get all elements with class "date" and set their innerHTML to the formatted date string
+        var dateElements = document.getElementsByClassName("date");
+        for (var i = 0; i < dateElements.length; i++) {
+          dateElements[i].innerHTML = dateString;
+        }
+      };
+    </script>
+	  
+    <div id="loom-companion-mv3" ext-id="liecbddmkiiihnedobmlmillhodjkdmb">
+      <div id="shadow-host-companion">
+        <template shadowrootmode="open">
+          <div id="inner-shadow-companion">
+            <div id="tooltip-mount-layer-companion" class="css-0"></div>
+            <style data-emotion="companion-global" data-s=""></style>
+            <style data-emotion="companion" data-s=""></style>
+            <style>
+              #inner-shadow-companion {
+                font-size: 100%;
+              }
+
+              #inner-shadow-companion {
+                --lns-fontFamily-body: "Atlassian Sans", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, system-ui, "Helvetica Neue", sans-serif;
+                --lns-fontFamily-heading: "Atlassian Sans", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, system-ui, "Helvetica Neue", sans-serif;
+                --lns-fontFamily-code: "Atlassian Mono", ui-monospace, Menlo, "Segoe UI Mono", "Ubuntu Mono", monospace;
+                font-family: var(--lns-fontFamily-body);
+                color: var(--ds-text, var(--lns-color-body));
+                font-size: var(--lns-fontSize-body-md);
+                line-height: var(--lns-lineHeight-body-md);
+                letter-spacing: var(--lns-letterSpacing-body-md);
+                ;
+              }
+
+              #inner-shadow-companion *,
+              #inner-shadow-companion *:before,
+              #inner-shadow-companion *:after {
+                box-sizing: border-box;
+              }
+
+              #inner-shadow-companion * {
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+              }
+
+
+              #tooltip-mount-layer-companion {
+                z-index: 2147483646;
+                position: relative;
+                color: var(--lns-color-body);
+                pointer-events: auto;
+              }
+            </style>
+            <div class="companion-1b6rwsq"></div>
+          </div>
+        </template>
+      </div>
+    </div>
+  </body>
+</html>
